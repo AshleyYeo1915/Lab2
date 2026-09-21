@@ -10,7 +10,10 @@ print("Inventory Tracker - enter a stock quantity, or type 'quit' to stop.")
 
 
 while True:
-    user_input = input("Enter stock quantity: ").strip()
+    try:
+        user_input = input("Enter stock quantity: ").strip()
+    except EOFError:
+        break
 
   
     if user_input.lower() == "quit":
