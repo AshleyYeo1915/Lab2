@@ -1,0 +1,78 @@
+<svg xml:space="preserve" xmlns="http://www.w3.org/2000/svg" width="1560" height="883" viewBox="0 0 1560 883">
+<rect width="1560" height="883" fill="#fff"/>
+<text x="30" y="42" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">INF1103 Lab 7 — UML Class Diagram (Inheritance, Abstraction, Interfaces)</text>
+<rect x="30" y="70" width="380" height="227" fill="#fff" stroke="#1f2937" stroke-width="1.5"/>
+<rect x="30" y="70" width="380" height="40" fill="#e8eef9" stroke="#1f2937" stroke-width="1.5"/>
+<text x="220.0" y="96" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#111827">Inventory</text>
+<line x1="30" y1="151" x2="410" y2="151" stroke="#1f2937" stroke-width="1.5"/>
+<text x="42" y="135" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">- __products : list[Product]</text>
+<text x="42" y="176" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">+ __init__()</text>
+<text x="42" y="197" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">+ add_product(product: Product) : void</text>
+<text x="42" y="218" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">+ search_product(term: String) : Product</text>
+<text x="42" y="239" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">+ display_all() : void</text>
+<text x="42" y="260" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">+ get_products() : list[Product]</text>
+<text x="42" y="281" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">+ next_product_id() : String</text>
+<rect x="580" y="70" width="560" height="350" fill="#fff" stroke="#1f2937" stroke-width="1.5"/>
+<rect x="580" y="70" width="560" height="58" fill="#efe9fb" stroke="#1f2937" stroke-width="1.5"/>
+<text x="860.0" y="91" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#374151">«abstract»</text>
+<text x="860.0" y="114" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="italic" fill="#111827">Product</text>
+<line x1="580" y1="232" x2="1140" y2="232" stroke="#1f2937" stroke-width="1.5"/>
+<text x="592" y="153" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">- __product_id : String</text>
+<text x="592" y="174" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">- __name : String</text>
+<text x="592" y="195" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">- __price : float</text>
+<text x="592" y="216" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">- __stock : int</text>
+<text x="592" y="257" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">+ __init__(product_id: String, name: String, price: float, stock: int)</text>
+<text x="592" y="278" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">+ get_product_id() : String</text>
+<text x="592" y="299" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">+ get_name() : String</text>
+<text x="592" y="320" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">+ get_price() : float</text>
+<text x="592" y="341" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">+ get_stock() : int</text>
+<text x="592" y="362" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">+ update_stock(quantity: int) : void</text>
+<text x="592" y="383" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">+ display_information() : void</text>
+<text x="592" y="404" font-family="Consolas, 'Courier New', monospace" font-size="13.5" font-style="italic" fill="#111827">+ get_fulfilment_info() : String {abstract}</text>
+<rect x="30" y="540" width="360" height="119" fill="#fff" stroke="#1f2937" stroke-width="1.5"/>
+<rect x="30" y="540" width="360" height="58" fill="#e6f4ea" stroke="#1f2937" stroke-width="1.5"/>
+<text x="210.0" y="561" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#374151">«interface»</text>
+<text x="210.0" y="584" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="italic" fill="#111827">CanBeShipped</text>
+<line x1="30" y1="618" x2="390" y2="618" stroke="#1f2937" stroke-width="1.5"/>
+<text x="42" y="643" font-family="Consolas, 'Courier New', monospace" font-size="13.5" font-style="italic" fill="#111827">+ calculate_shipping_cost() : float {abstract}</text>
+<rect x="500" y="540" width="460" height="248" fill="#fff" stroke="#1f2937" stroke-width="1.5"/>
+<rect x="500" y="540" width="460" height="40" fill="#e8eef9" stroke="#1f2937" stroke-width="1.5"/>
+<text x="730.0" y="566" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#111827">PhysicalProduct</text>
+<line x1="500" y1="663" x2="960" y2="663" stroke="#1f2937" stroke-width="1.5"/>
+<text x="512" y="605" font-family="Consolas, 'Courier New', monospace" font-size="13.5" text-decoration="underline" fill="#111827">+ BASE_SHIPPING_FEE : float = 5.00</text>
+<text x="512" y="626" font-family="Consolas, 'Courier New', monospace" font-size="13.5" text-decoration="underline" fill="#111827">+ SHIPPING_RATE_PER_KG : float = 2.00</text>
+<text x="512" y="647" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">- __weight : float</text>
+<text x="512" y="688" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">+ __init__(product_id, name, price, stock, weight: float)</text>
+<text x="512" y="709" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">+ get_weight() : float</text>
+<text x="512" y="730" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">+ display_information() : void</text>
+<text x="512" y="751" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">+ get_fulfilment_info() : String</text>
+<text x="512" y="772" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">+ calculate_shipping_cost() : float</text>
+<rect x="1010" y="540" width="520" height="185" fill="#fff" stroke="#1f2937" stroke-width="1.5"/>
+<rect x="1010" y="540" width="520" height="40" fill="#e8eef9" stroke="#1f2937" stroke-width="1.5"/>
+<text x="1270.0" y="566" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#111827">DigitalProduct</text>
+<line x1="1010" y1="621" x2="1530" y2="621" stroke="#1f2937" stroke-width="1.5"/>
+<text x="1022" y="605" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">- __download_size : float</text>
+<text x="1022" y="646" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">+ __init__(product_id, name, price, stock, download_size: float)</text>
+<text x="1022" y="667" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">+ get_download_size() : float</text>
+<text x="1022" y="688" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">+ display_information() : void</text>
+<text x="1022" y="709" font-family="Consolas, 'Courier New', monospace" font-size="13.5" fill="#111827">+ get_fulfilment_info() : String</text>
+
+<polygon points="860.0,420 849.0,438 871.0,438" fill="#fff" stroke="#1f2937" stroke-width="1.5"/>
+<line x1="860.0" y1="438" x2="860.0" y2="482" stroke="#1f2937" stroke-width="1.5"/>
+<line x1="730.0" y1="482" x2="1270.0" y2="482" stroke="#1f2937" stroke-width="1.5"/>
+<line x1="730.0" y1="482" x2="730.0" y2="540" stroke="#1f2937" stroke-width="1.5"/>
+<line x1="1270.0" y1="482" x2="1270.0" y2="540" stroke="#1f2937" stroke-width="1.5"/>
+<text x="876.0" y="464" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-style="italic" fill="#374151">is-a (inheritance)</text>
+
+<polygon points="390,610 408,600 408,620" fill="#fff" stroke="#1f2937" stroke-width="1.5"/>
+<line x1="408" y1="610" x2="500" y2="610" stroke="#1f2937" stroke-width="1.5" stroke-dasharray="7 5"/>
+<text x="454.0" y="600" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-style="italic" fill="#374151">implements</text>
+
+<polygon points="410,190 426,182 442,190 426,198" fill="#fff" stroke="#1f2937" stroke-width="1.5"/>
+<line x1="442" y1="190" x2="580" y2="190" stroke="#1f2937" stroke-width="1.5"/>
+<text x="511.0" y="178" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-style="italic" fill="#374151">contains</text>
+<text x="448" y="210" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#374151">1</text>
+<text x="572" y="210" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#374151">0..*</text>
+<text x="30" y="830" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" fill="#4b5563">Key:   − private   ·   + public   ·   italics / {abstract} = abstract (no implementation)   ·   underlined = class-level constant</text>
+<text x="30" y="852" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" fill="#4b5563">Solid line + hollow triangle = inheritance (child → parent)   ·   Dashed line + hollow triangle = interface realisation   ·   Hollow diamond = aggregation</text>
+</svg>
