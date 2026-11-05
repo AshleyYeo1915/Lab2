@@ -1,0 +1,50 @@
+[
+    {
+        "type": "physical",
+        "product_id": "P001",
+        "name": "Laptop",
+        "price": 1200.0,
+        "stock": 15,
+        "weight": 2.2
+    },
+    {
+        "type": "physical",
+        "product_id": "P002",
+        "name": "Mouse",
+        "price": 25.5,
+        "stock": 40,
+        "weight": 0.1
+    },
+    {
+        "type": "physical",
+        "product_id": "P003",
+        "name": "Keyboard",
+        "price": 45.9,
+        "stock": 20,
+        "weight": 0.9
+    },
+    {
+        "type": "physical",
+        "product_id": "P004",
+        "name": "Milk",
+        "price": 10.0,
+        "stock": 20,
+        "weight": 1.0
+    },
+    {
+        "type": "digital",
+        "product_id": "P005",
+        "name": "Photo Editing Software",
+        "price": 89.9,
+        "stock": 100,
+        "download_size": 850.0
+    },
+    {
+        "type": "digital",
+        "product_id": "P006",
+        "name": "Antivirus Licence",
+        "price": 39.9,
+        "stock": 200,
+        "download_size": 120.0
+    }
+]
